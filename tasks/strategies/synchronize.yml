@@ -1,6 +1,6 @@
 ---
 # Update using synchronize strategy
-- name: Ensure shared copy for rsync improvement exists (in rsync case)
+- name: Ensure shared copy for rsync improvement exists
   file: state=directory recurse=yes path={{ deploy_to }}/.shared-copy
 
 - name: Get shared path (in rsync case)
